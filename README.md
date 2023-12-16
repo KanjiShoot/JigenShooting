@@ -1,4 +1,5 @@
 # JigenShooting
+Copyright © 2023 Ishimaki Kazutoyo. All rights reserved.
 ### 字源シューティング
 このゲームは、漢字の成り立ちを活用したシューティングゲームです。
 スマートフォン向けアプリです。
