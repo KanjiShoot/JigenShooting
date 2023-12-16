@@ -1,0 +1,24 @@
+{
+"stage1":{
+    "stage":"方",
+    "maxFall":2,
+    "minFall":1,
+    "waveQty":8,
+    "enemyQWty":2,
+    "orderMethod":"rand",
+    "chargeTime":2,
+    "enemyInfo":{
+        "made":"方",
+        "tsukuri":"",
+        "pron":"",
+        "enemy":{
+            "enemy1":"",
+            "enemy2":""
+        },
+        "mean":"両方に突き出た柄のあるすきの象形で、ならんで耕すさまから、ならぶ・かたわらの意味を表す。"
+    }
+    },
+    "stage2":{
+        
+    }
+}
