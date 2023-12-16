@@ -4,16 +4,16 @@
 スマートフォン向けアプリです。
 ### プレイ動画 (リンク)
 ### ダウンロード手順
-1.クローン
-2.必要ファイルのダウンロード
-必要なフォントアセットファイルや画像については以下からダウンロードしてください
-https://drive.google.com/drive/folders/1F2o385f8CG9FfUMA_pHi4OKXZF8jpu3_?usp=sharing　　
-画像はクローンでうまく行かなかった場合にAssets/imagesに入れてください
-フォントアセットファイルは
-Assets/fontsに入れてください
-入れるべきファイルは以下です
-  Assets/fonts/ipamjmF.asset
-  Assets/fonts/Noto.asset
-  Assets/fonts/ipamjmEnemy.asset
-  Assets/fonts/DotGothic16Japanese.asset
-  Assets/fonts/DotGothic16.asset
+1.クローン<br>
+2.必要ファイルのダウンロード<br>
+必要なフォントアセットファイルや画像については以下からダウンロードしてください<br>
+https://drive.google.com/drive/folders/1F2o385f8CG9FfUMA_pHi4OKXZF8jpu3_?usp=sharing<br>　　
+画像はクローンでうまく行かなかった場合にAssets/imagesに入れてください<br>
+フォントアセットファイルは<br>
+Assets/fontsに入れてください<br>
+入れるべきファイルは以下です<br>
+  Assets/fonts/ipamjmF.asset<br>
+  Assets/fonts/Noto.asset<br>
+  Assets/fonts/ipamjmEnemy.asset<br>
+  Assets/fonts/DotGothic16Japanese.asset<br>
+  Assets/fonts/DotGothic16.asset<br>
