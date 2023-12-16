@@ -1,3 +1,8 @@
+/*
+Copyright Â©Â 2023 Ishimaki Kazutoyo. All rights reserved.
+This source code or any portion thereof must not beÂ  
+reproduced or used in any manner whatsoever.
+*/
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,7 +28,7 @@ public class BackGroundMover : MonoBehaviour
     {
         if (m_material)
         {
-            // x‚Æy‚Ì’l‚ª0 ` 1‚ÅƒŠƒs[ƒg‚·‚é‚æ‚¤‚É‚·‚é
+            // xï¿½ï¿½yï¿½Ì’lï¿½ï¿½0 ï¿½` 1ï¿½Åƒï¿½ï¿½sï¿½[ï¿½gï¿½ï¿½ï¿½ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
             var x = Mathf.Repeat(Time.time * m_offsetSpeed.x, k_maxLength);
             var y = Mathf.Repeat(Time.time * m_offsetSpeed.y, k_maxLength);
             var offset = new Vector2(x, y);
@@ -33,7 +38,7 @@ public class BackGroundMover : MonoBehaviour
 
     private void OnDestroy()
     {
-        // ƒQ[ƒ€‚ğ‚â‚ß‚½Œã‚Éƒ}ƒeƒŠƒAƒ‹‚ÌOffset‚ğ–ß‚µ‚Ä‚¨‚­
+        // ï¿½Qï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚ï¿½ï¿½ï¿½Éƒ}ï¿½eï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½Offsetï¿½ï¿½ß‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
         if (m_material)
         {
             m_material.SetTextureOffset(k_propName, Vector2.zero);

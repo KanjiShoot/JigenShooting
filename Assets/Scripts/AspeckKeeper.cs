@@ -1,3 +1,8 @@
+/*
+Copyright Â©Â 2023 Ishimaki Kazutoyo. All rights reserved.
+This source code or any portion thereof must not beÂ  
+reproduced or used in any manner whatsoever.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +11,10 @@ using UnityEngine;
 public class AspeckKeeper : MonoBehaviour
 {
     [SerializeField]
-    private Camera targetCamera; //‘ÎÛ‚Æ‚·‚éƒJƒƒ‰
+    private Camera targetCamera; //ï¿½ÎÛ‚Æ‚ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½ï¿½
 
     [SerializeField]
-    private Vector2 aspectVec; //–Ú“I‰ğ‘œ“x
+    private Vector2 aspectVec; //ï¿½Ú“Iï¿½ğ‘œ“x
     // Start is called before the first frame update
     void Start()
     {
@@ -19,24 +24,24 @@ public class AspeckKeeper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var screenAspect = Screen.width / (float)Screen.height; //‰æ–Ê‚ÌƒAƒXƒyƒNƒg”ä
-        var targetAspect = aspectVec.x / aspectVec.y; //–Ú“I‚ÌƒAƒXƒyƒNƒg”ä
+        var screenAspect = Screen.width / (float)Screen.height; //ï¿½ï¿½Ê‚ÌƒAï¿½Xï¿½yï¿½Nï¿½gï¿½ï¿½
+        var targetAspect = aspectVec.x / aspectVec.y; //ï¿½Ú“Iï¿½ÌƒAï¿½Xï¿½yï¿½Nï¿½gï¿½ï¿½
 
-        var magRate = targetAspect / screenAspect; //–Ú“IƒAƒXƒyƒNƒg”ä‚É‚·‚é‚½‚ß‚Ì”{—¦
+        var magRate = targetAspect / screenAspect; //ï¿½Ú“Iï¿½Aï¿½Xï¿½yï¿½Nï¿½gï¿½ï¿½É‚ï¿½ï¿½é‚½ï¿½ß‚Ì”{ï¿½ï¿½
 
-        var viewportRect = new Rect(0, 0, 1, 1); //Viewport‰Šú’l‚ÅRect‚ğì¬
+        var viewportRect = new Rect(0, 0, 1, 1); //Viewportï¿½ï¿½ï¿½ï¿½ï¿½lï¿½ï¿½Rectï¿½ï¿½ï¿½ì¬
 
         if(magRate < 1)
         {
-            viewportRect.width = magRate; //g—p‚·‚é‰¡•‚ğ•ÏX
-            viewportRect.x = 0.5f - viewportRect.width * 0.5f; //’†‰›Šñ‚¹
+            viewportRect.width = magRate; //ï¿½gï¿½pï¿½ï¿½ï¿½é‰¡ï¿½ï¿½ï¿½ï¿½ÏX
+            viewportRect.x = 0.5f - viewportRect.width * 0.5f; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         }
         else
         {
-            viewportRect.height = 1 / magRate; //g—p‚·‚éc•‚ğ•ÏX
-            viewportRect.y = 0.5f - viewportRect.height * 0.5f; //’†‰›Šñ‚¹
+            viewportRect.height = 1 / magRate; //ï¿½gï¿½pï¿½ï¿½ï¿½ï¿½cï¿½ï¿½ï¿½ï¿½ÏX
+            viewportRect.y = 0.5f - viewportRect.height * 0.5f; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         }
 
-        targetCamera.rect = viewportRect; //ƒJƒƒ‰‚ÌViewport‚É“K—p
+        targetCamera.rect = viewportRect; //ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Viewportï¿½É“Kï¿½p
     }
 }
